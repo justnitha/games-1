@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.bg-images {
+  background-image: url('assets/bg-triangle.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  margin: 0;
+  padding: 0;
+  height: 50vh; /* Mengatur tinggi sesuai dengan tinggi viewport (viewport height) */
+  width: 100%; /* Mengatur lebar 100% */
+  overflow: hidden; /* Menghilangkan scroll bar jika ada */
+  
+  /* background-size: cover; */
+
+}
