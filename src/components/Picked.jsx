@@ -87,7 +87,7 @@ export default function Picked({ score, setScore,selectIcon, setSelectIcon }) {
     <div className="mt-20">
       {selectIcon ? (
         // user icon
-        <div className="w-[80%] mx-auto h-screen grid grid-cols-2 lg:grid-cols-3 gap- relative">
+        <div className="w-[80%] mx-auto h-screen grid grid-cols-2 lg:grid-cols-3 relative">
           <div className="relative">
             <h1 className="text-white tracking-wider lg:text-xl text-center mb-10 absolute z-30 iphone6:left-[1.5rem] left-[1rem] lg:left-[9rem] lg:top-0  top-[15rem] iphone6:top-[10rem]">
               You Picked
