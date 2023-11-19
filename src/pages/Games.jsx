@@ -13,7 +13,7 @@ export default function Games() {
         setrules(false)
     }
     return (
-        <div className=' iphone6:h-[120vh] h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#1f3756] to-[#141539] overflow-hidden'>
+        <div className='respon iphone6:h-[120vh] h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#1f3756] to-[#141539] overflow-hidden'>
             <div className='pt-8 lg:pt-4'>
                 <section className='w-[80%] lg:w-[50%] uppercase mx-auto border flex justify-between p-5 rounded-md'>
                     <div>
@@ -47,7 +47,7 @@ export default function Games() {
                                     />
                                 </div>
                                 <img 
-                                    src={require('../assets/image-rules.svg').default} 
+                                    src={require('../assets/image-rules-bonus.svg').default} 
                                     alt="rules"
                                     className='w-full mt-10 lg:mt-0' 
                                 />
@@ -55,12 +55,12 @@ export default function Games() {
                                     src={require('../assets/icon-close.svg').default} 
                                     alt="close" 
                                     onClick={handleClose}
-                                    className='cursor-pointer text-center absolute iphone6:bottom-44 bottom-20 left-[49.4%] lg:hidden '
+                                    className='cursor-pointer text-center absolute iphone6:bottom-44 close left-[49.4%] lg:hidden '
                                 />
                             </div>
                         </>
                     ) : (
-                        <div className={selectIcon ? 'hidden' : 'w-[8rem] lg:w-[5rem] mx-auto right-10 lg:absolute bottom-8 mt-10' }>
+                        <div className={selectIcon ? 'hidden' : 'w-[8rem] lg:w-[5rem] mx-auto right-10 lg:absolute bottom-8 mt-10 iphone6:mt-36' }>
                         <p 
                             className='text-white tracking-wider rounded-lg border text-2xl lg:text-lg py-1 mt-32 iphone6:mt-0 lg:mt-16 text-center cursor-pointer'
                             onClick={handleRules}

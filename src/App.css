@@ -46,19 +46,32 @@
   padding: 0;
   /* height: 50vh; Mengatur tinggi sesuai dengan tinggi viewport (viewport height) */
   /* width: 100%; Mengatur lebar 100% */
-  overflow: hidden; /* Menghilangkan scroll bar jika ada */
+  /* overflow: hidden; Menghilangkan scroll bar jika ada */
   
-  /* background-size: cover; */
+  background-size: contain;
 
 }
 @media screen and (min-width: 375px) {
   .bg-images {
-    height: 50vh;
+    height: 40vh;
+    width: 60%;
+    margin:auto;
   }
+  
 }
 @media screen and (min-width: 390px) {
   .bg-images {
-    height: 40vh;
+    height: 39vh;
+    margin: 120px auto;
+  }
+  .atur{
+    margin-top:-1px
+  }
+  .respon{
+    height:100vh;
+  }
+  .close{
+    bottom:15rem;
   }
 }
 @media screen and (min-width: 412px) {
@@ -69,10 +82,30 @@
 @media screen and (min-width: 414px) {
   .bg-images {
     height: 39vh;
+    margin: 120px auto;
+  }
+  .atur{
+    margin-top:-1px
+  }
+  .respon{
+    height:100vh;
+  }
+  .close{
+    bottom:15rem;
   }
 }
 @media screen and (min-width: 1014px) {
   .bg-images {
     height: 50vh;
+    margin:0px auto;
+  }
+  .atur{
+    margin-top:-37px;
+  }
+  .respon{
+    height:100vh;
+  }
+  .close{
+    bottom:15rem;
   }
 }
