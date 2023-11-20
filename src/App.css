@@ -109,3 +109,33 @@
     bottom:15rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .bg-images {
+    height: 50vh;
+    margin:0px auto;
+  }
+  .atur{
+    margin-top:-37px;
+  }
+  .respon{
+    height:100vh;
+  }
+  .close{
+    bottom:15rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .bg-images {
+    height: 50vh;
+    margin:0px auto;
+  }
+  .atur{
+    margin-top:-37px;
+  }
+  .respon{
+    height:100vh;
+  }
+  .close{
+    bottom:15rem;
+  }
+}
