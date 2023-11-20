@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import {Lose,seri,rockIcon,paperIcon,scissorsIcon,spockIcon,LizardIcon,bgImage,Paper,Rock,Scissors,PaperCom,ScissorsCom,RockCom,Pilihan,Spock,Lizard,SpockCom,LizardCom,Lagu,} from "../components/Import"
+import {Lose,seri,rockIcon,paperIcon,scissorsIcon,spockIcon,LizardIcon,bgImage,Master,Pilihan,Computer,Lagu,} from "../components/Import"
 
-export default function Picked({ score, setScore, selectIcon, setSelectIcon }) {
+export default function Picked({ score, setScore, selectIcon, setSelectIcon, }) {
   const [computerIcon, setComputerIcon] = useState(null);
   const [massege, setMassege] = useState("hidden");
   const [win, setWin] = useState(false);
@@ -127,43 +127,49 @@ export default function Picked({ score, setScore, selectIcon, setSelectIcon }) {
               You Picked
             </h1>
             {selectIcon === "paper" && (
-              <Paper
+              <Master
                 win={win}
                 icons={icons}
                 selectIcon={selectIcon}
                 massege={massege}
+                bg="from-blue-11  to-blue-12"
+                
               />
             )}
             {selectIcon === "scissors" && (
-              <Scissors
+              <Master
                 win={win}
                 icons={icons}
                 selectIcon={selectIcon}
                 massege={massege}
+                bg="from-orange-11  to-orange-12"
               />
             )}
             {selectIcon === "rock" && (
-              <Rock
+              <Master
                 win={win}
                 icons={icons}
                 selectIcon={selectIcon}
                 massege={massege}
+                bg="from-pink-11  to-pink-12"
               />
             )}
             {selectIcon === "spock" && (
-              <Spock
+              <Master
                 win={win}
                 icons={icons}
                 selectIcon={selectIcon}
                 massege={massege}
+                bg="from-cyan-11  to-cyan-12"
               />
             )}
             {selectIcon === "lizard" && (
-              <Lizard
+              <Master
                 win={win}
                 icons={icons}
                 selectIcon={selectIcon}
                 massege={massege}
+                bg="from-purple-11  to-purple-12"
               />
             )}
           </div>
@@ -196,23 +202,44 @@ export default function Picked({ score, setScore, selectIcon, setSelectIcon }) {
               The House Picked
             </h1>
             {computerIcon === "paper" && (
-              <PaperCom win={win} massege={massege} paperIcon={paperIcon} />
+              <Computer
+                win={win} 
+                massege={massege} 
+                Icon={paperIcon} 
+                bg="from-blue-11  to-blue-12" 
+            />
             )}
             {computerIcon === "scissors" && (
-              <ScissorsCom
-                win={win}
-                massege={massege}
-                scissorsIcon={scissorsIcon}
-              />
+             <Computer
+              win={win} 
+              massege={massege} 
+              Icon={scissorsIcon} 
+              bg="from-orange-11  to-orange-12" 
+           />
             )}
             {computerIcon === "rock" && (
-              <RockCom win={win} massege={massege} rockIcon={rockIcon} />
+              <Computer
+                win={win} 
+                massege={massege} 
+                Icon={rockIcon} 
+                bg="from-pink-11  to-pink-12" 
+            />
             )}
             {computerIcon === "spock" && (
-              <SpockCom win={win} massege={massege} spockIcon={spockIcon} />
+              <Computer
+                win={win} 
+                massege={massege} 
+                Icon={spockIcon} 
+                bg="from-cyan-11  to-cyan-12" 
+            />
             )}
             {computerIcon === "lizard" && (
-              <LizardCom win={win} massege={massege} LizardIcon={LizardIcon} />
+              <Computer
+                win={win} 
+                massege={massege} 
+                Icon={LizardIcon} 
+                bg="from-purple-11  to-purple-12" 
+              />
             )}
           </div>
 
