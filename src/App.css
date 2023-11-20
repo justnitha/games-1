@@ -51,6 +51,24 @@
   background-size: contain;
 
 }
+@media screen and (min-width: 350px) {
+  .bg-images {
+    height: 39vh;
+    margin: 120px auto;
+  }
+  .atur{
+    margin-top:-20px
+  }
+  .respon{
+    height:120vh;
+  }
+  .close{
+    bottom:5rem;
+  }
+  .rules{
+    height: 120vh;
+  }
+}
 @media screen and (min-width: 375px) {
   .bg-images {
     height: 40vh;
@@ -108,6 +126,9 @@
   .close{
     bottom:15rem;
   }
+  .rules{
+    height: 70vh;
+  }
 }
 @media screen and (min-width: 1280px) {
   .bg-images {
@@ -123,6 +144,9 @@
   .close{
     bottom:15rem;
   }
+  .rules{
+    height: 70vh;
+  }
 }
 @media screen and (min-width: 1536px) {
   .bg-images {
@@ -137,5 +161,8 @@
   }
   .close{
     bottom:15rem;
+  }
+  .rules{
+    height: 70vh;
   }
 }

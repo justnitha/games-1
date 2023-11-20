@@ -121,9 +121,9 @@ export default function Picked({ score, setScore, selectIcon, setSelectIcon }) {
       </audio>
       {selectIcon ? (
         // user icon
-        <div className="w-[80%] mx-auto h-screen grid grid-cols-2 lg:grid-cols-3 relative">
+        <div className="w-[80%] mx-auto h-screen grid grid-cols-2 lg:grid-cols-3 relative -mt-10 iphone6:-mt-0">
           <div className="relative">
-            <h1 className="text-white tracking-wider lg:text-xl text-center mb-10 absolute z-30 iphone6:left-[1.5rem] left-[1rem] lg:left-[9rem] lg:top-0  top-[15rem] iphone6:top-[10rem]">
+            <h1 className="text-white tracking-wider lg:text-xl text-center mb-10 absolute z-30 iphone6:left-[1.5rem] left-[1rem] lg:left-[9rem] lg:top-0 top-[15rem] iphone6:top-[10rem]">
               You Picked
             </h1>
             {selectIcon === "paper" && (
@@ -222,7 +222,7 @@ export default function Picked({ score, setScore, selectIcon, setSelectIcon }) {
               <div className="w-[70%] mx-auto  relative  hidden"></div>
             )}
             {massege !== "hidden" && (
-              <div className="mx-auto relative ">
+              <div className="mx-auto relative mt-[120px] iphone6:mt-0 sm:mt-0 md:mt-0">
                 <div className="absolute bottom-0 left-[50%] z-20 uppercase w-full">
                   <p className="mt-32 text-3xl  lg:text-5xl font-bold tracking-widest text-white text-center">
                     {massege}
