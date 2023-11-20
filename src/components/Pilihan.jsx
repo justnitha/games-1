@@ -27,7 +27,7 @@ export default function Pilihan({
           </div>
         </div>
       </div>
-      <div className="flex gap-[6rem] lg:gap-[13rem] 2xl:-mt-3 lg:-mt-6 -mt-2 iphone6:-mt-5 justify-center">
+      <div className="flex gap-[6rem] lg:gap-[13rem] xl:-mt-1 2xl:-mt-3 lg:-mt-6 -mt-2 iphone6:-mt-5 justify-center">
         <div
           className="p-4 lg:p-5 2xl:p-8 iphone6:p-4 bg-gradient-to-r cursor-pointer from-cyan-11 to-cyan-12 rounded-full"
           onClick={() => handleKlikIcon("spock")}
@@ -51,7 +51,7 @@ export default function Pilihan({
           </div>
         </div>
       </div>
-      <div className="flex gap-[2rem] lg:gap-[4rem] lg:mt-9 iphone6:mt-5 mt-7 justify-center">
+      <div className="flex gap-[2rem] lg:gap-[4rem] 2xl:mt-20 lg:mt-9 iphone6:mt-4 mt-7 justify-center">
         <div
           className="p-4 lg:p-5 2xl:p-8 iphone6:p-4 bg-gradient-to-t cursor-pointer from-purple-11 to-purple-12 rounded-full shadow-purple-12"
           onClick={() => handleKlikIcon("lizard")}
