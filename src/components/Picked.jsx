@@ -104,9 +104,9 @@ export default function Picked({ score, setScore, selectIcon, setSelectIcon, }) 
     audioSeriRef.current.currentTime = 0;
   };
 
-  // useEffect(() => {
-  //   playAgain();
-  // }, [again]);
+  useEffect(() => {
+    playAgain();
+  }, [again]);
 
   return (
     <div className="mt-20 ">
