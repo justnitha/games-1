@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Master({win, selectIcon, icons, massege,bg}) {
+export default function Master({win, selectIcon, icons, massege,bg,py}) {
   return (
     <div>
     {win ? (
@@ -14,7 +14,7 @@ export default function Master({win, selectIcon, icons, massege,bg}) {
             <img
               src={icons[selectIcon]}
               alt={selectIcon}
-              className="mx-auto py-3 lg:pt-12 lg:w-[120px] lg:h-[200px]"
+              className={`mx-auto ${py} lg:pt-12 lg:w-[120px] lg:h-[200px]`}
             />
           </div>
         </div>
@@ -28,18 +28,18 @@ export default function Master({win, selectIcon, icons, massege,bg}) {
               <img
                 src={icons[selectIcon]}
                 alt={selectIcon}
-                className="mx-auto py-3 lg:pt-12 lg:w-[120px] lg:h-[200px]"
+                className={`mx-auto ${py} lg:pt-12 lg:w-[120px] lg:h-[200px]`}
               />
             </div>
           </div>
         ) : (
           // kalah
           <div className={`p-5 lg:p-8 bg-gradient-to-r z-20 absolute top-[4rem] iphone6:top-0 lg:top-[4rem] lg:left-[2.4rem] rounded-full ${bg}`}>
-            <div className="bg-white w-[90px] h-[90px] lg:w-[250px] lg:h-[250px] mx-auto rounded-full">
+            <div className={`bg-white w-[90px] h-[90px] lg:w-[250px] lg:h-[250px] mx-auto rounded-full`}>
               <img
                 src={icons[selectIcon]}
                 alt={selectIcon}
-                className="mx-auto py-3 lg:pt-12 lg:w-[120px] lg:h-[200px]"
+                className={`mx-auto ${py} lg:pt-12 lg:w-[120px] lg:h-[200px]`}
               />
             </div>
           </div>

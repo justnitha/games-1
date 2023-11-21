@@ -104,9 +104,9 @@ export default function Picked({ score, setScore, selectIcon, setSelectIcon, }) 
     audioSeriRef.current.currentTime = 0;
   };
 
-  useEffect(() => {
-    playAgain();
-  }, [again]);
+  // useEffect(() => {
+  //   playAgain();
+  // }, [again]);
 
   return (
     <div className="mt-20 ">
@@ -133,6 +133,7 @@ export default function Picked({ score, setScore, selectIcon, setSelectIcon, }) 
                 selectIcon={selectIcon}
                 massege={massege}
                 bg="from-blue-11  to-blue-12"
+                py="py-4 pe-1"
                 
               />
             )}
@@ -143,6 +144,7 @@ export default function Picked({ score, setScore, selectIcon, setSelectIcon, }) 
                 selectIcon={selectIcon}
                 massege={massege}
                 bg="from-orange-11  to-orange-12"
+                py="py-4"
               />
             )}
             {selectIcon === "rock" && (
@@ -152,6 +154,7 @@ export default function Picked({ score, setScore, selectIcon, setSelectIcon, }) 
                 selectIcon={selectIcon}
                 massege={massege}
                 bg="from-pink-11  to-pink-12"
+                py="py-5"
               />
             )}
             {selectIcon === "spock" && (
@@ -161,6 +164,7 @@ export default function Picked({ score, setScore, selectIcon, setSelectIcon, }) 
                 selectIcon={selectIcon}
                 massege={massege}
                 bg="from-cyan-11  to-cyan-12"
+                py="py-4 ps-2"
               />
             )}
             {selectIcon === "lizard" && (
@@ -170,6 +174,7 @@ export default function Picked({ score, setScore, selectIcon, setSelectIcon, }) 
                 selectIcon={selectIcon}
                 massege={massege}
                 bg="from-purple-11  to-purple-12"
+                py="py-4"
               />
             )}
           </div>
@@ -199,7 +204,7 @@ export default function Picked({ score, setScore, selectIcon, setSelectIcon, }) 
           {/* the house picked */}
           <div className="">
             <h1 className="text-white tracking-wider lg:text-xl text-center mb-10 absolute z-30 iphone6:-right-[1rem] -right-[1rem] lg:right-[8rem] lg:top-0 top-[15rem] iphone6:top-[10rem]">
-              The House Picked
+              The House Computer
             </h1>
             {computerIcon === "paper" && (
               <Computer
@@ -207,6 +212,7 @@ export default function Picked({ score, setScore, selectIcon, setSelectIcon, }) 
                 massege={massege} 
                 Icon={paperIcon} 
                 bg="from-blue-11  to-blue-12" 
+                py="py-4 pe-1"
             />
             )}
             {computerIcon === "scissors" && (
@@ -215,6 +221,7 @@ export default function Picked({ score, setScore, selectIcon, setSelectIcon, }) 
               massege={massege} 
               Icon={scissorsIcon} 
               bg="from-orange-11  to-orange-12" 
+              py="py-4"
            />
             )}
             {computerIcon === "rock" && (
@@ -223,6 +230,7 @@ export default function Picked({ score, setScore, selectIcon, setSelectIcon, }) 
                 massege={massege} 
                 Icon={rockIcon} 
                 bg="from-pink-11  to-pink-12" 
+                py="py-5"
             />
             )}
             {computerIcon === "spock" && (
@@ -231,6 +239,7 @@ export default function Picked({ score, setScore, selectIcon, setSelectIcon, }) 
                 massege={massege} 
                 Icon={spockIcon} 
                 bg="from-cyan-11  to-cyan-12" 
+                py="py-4 ps-2"
             />
             )}
             {computerIcon === "lizard" && (
@@ -239,6 +248,7 @@ export default function Picked({ score, setScore, selectIcon, setSelectIcon, }) 
                 massege={massege} 
                 Icon={LizardIcon} 
                 bg="from-purple-11  to-purple-12" 
+                py="py-4"
               />
             )}
           </div>

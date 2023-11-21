@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Computer({win,Icon,massege,bg}) {
+export default function Computer({win,Icon,massege,bg,py}) {
   return (
     <div>
     {win ? (
@@ -10,7 +10,7 @@ export default function Computer({win,Icon,massege,bg}) {
               <img
                 src={Icon}
                 alt={Icon}
-                className="mx-auto py-6 lg:pt-12 lg:w-[120px] lg:h-[200px]"
+                className={`mx-auto ${py} lg:pt-12 lg:w-[120px] lg:h-[200px]`}
               />
             </div>
           </div>
@@ -23,7 +23,7 @@ export default function Computer({win,Icon,massege,bg}) {
               <img
                 src={Icon}
                 alt={Icon}
-                className="mx-auto py-6 lg:pt-12 lg:w-[120px] lg:h-[200px]"
+                className={`mx-auto ${py} lg:pt-12 lg:w-[120px] lg:h-[200px]`}
               />
             </div>
           </div>
@@ -38,7 +38,7 @@ export default function Computer({win,Icon,massege,bg}) {
             <img
               src={Icon}
               alt={Icon}
-              className="mx-auto py-6 lg:pt-12 lg:w-[120px] lg:h-[200px]"
+              className={`mx-auto ${py} lg:pt-12 lg:w-[120px] lg:h-[200px]`}
             />
           </div>
         </div>
